@@ -1,0 +1,180 @@
+{
+    "key": "group_5acfa4ca0ce3c",
+    "title": "Training Location",
+    "fields": [
+        {
+            "key": "field_5acfa4d43995a",
+            "label": "Shopify Collection",
+            "name": "shopify_collection_location",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0MDg1NTE3Mw==": "Most Popular Products",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY1OTU4OQ==": "People Skills for Product Managers and Product Marketers",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY2MDI5Mw==": "Optimal Product Management & Product Marketing",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NTkwOQ==": "Agile Excellence for Product Managers & Product Owners",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NjYxMw==": "Certified Product Manager Self-Study or In-Person",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NjgwNQ==": "Certified Product Marketing Manager Self-Study or In Person",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0Njk3NDkxNw==": "Online Courses",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NzgwNjg1Mw==": "Training Courses",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NzgwNjkxNw==": "Toolkits",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MjQ1NDU3NDcz": "Course: Agile for Product Managers and Product Owners",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MjQ1NjIxMzEz": "Course: Optimal Product Management and Product Marketing",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MzA2NTA0MjU3": "Location: Austin, TX",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDU1MjcwOTc3": "Location: Boston, MA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMjk5MTM3": "Location: New York, NY",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMzMxOTA1": "Location: San Francisco, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMzk3NDQx": "Location: San Jose, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzNTYxMjgx": "Locations: Toronto, ON",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzNTk0MDQ5": "Location: London, United Kingdom",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzODIzNDI1": "Location: Seattle, WA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDY0MTE4MzM3": "Location: Los Angeles, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM3NzAyNTk4NzIx": "Course Type: Online"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5aff245641313",
+            "label": "Course Cards Title",
+            "name": "course_cards_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aff23dae8b7a",
+            "label": "Course Cards",
+            "name": "course_cards",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "courses"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5aff245f41314",
+            "label": "FAQ Title",
+            "name": "faq_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aff240be8b7b",
+            "label": "FAQ",
+            "name": "faq",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5b3f80ce6a9f1",
+            "label": "Venue Location",
+            "name": "venue_location",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "training_locations"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1530888428
+}

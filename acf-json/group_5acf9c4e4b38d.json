@@ -1,0 +1,516 @@
+{
+    "key": "group_5acf9c4e4b38d",
+    "title": "Courses",
+    "fields": [
+        {
+            "key": "field_5acf9c8f72e76",
+            "label": "Course Type",
+            "name": "course_type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Online": "Online",
+                "In Person": "In Person",
+                "On Site": "On Site"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ad9f9b5a0ce0",
+            "label": "General Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acf9c8f72e76",
+                        "operator": "==",
+                        "value": "Online"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ade2acf11589",
+            "label": "Short Title",
+            "name": "short_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2aa61859cd4",
+            "label": "Shopify Page Link",
+            "name": "shopify_page_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5aeb7d60a5c3c",
+            "label": "Shopify Product",
+            "name": "shopify_product",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzg0NDYwOTI5MDI5": "Certified Product Manager - Online Course and Exam",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzc5MzMwNDk3OTc=": "Agile Certified Product Manager and Product Owner - Online Course and Exam",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzg0NDYwOTk0NTY1": "Certified Product Marketing Manager - Online Course and Exam"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b042ccf2063b",
+            "label": "Price",
+            "name": "price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ad9fa8f740ba",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5aeb1eabbfa95",
+            "label": "What's Included Masthead Text",
+            "name": "whats_included_masthead_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 5,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5ad9fb129c654",
+            "label": "General Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acf9c8f72e76",
+                        "operator": "==",
+                        "value": "In Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5afc6eb8635bc",
+            "label": "Short Title",
+            "name": "short_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b042da8ad879",
+            "label": "Shopify Collection",
+            "name": "shopify_collection_in_person",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0MDg1NTE3Mw==": "Most Popular Products",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY1OTU4OQ==": "People Skills for Product Managers and Product Marketers",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY2MDI5Mw==": "Optimal Product Management & Product Marketing",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NTkwOQ==": "Agile Excellence for Product Managers & Product Owners",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NjYxMw==": "Certified Product Manager Self-Study or In-Person",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NjY3NjgwNQ==": "Certified Product Marketing Manager Self-Study or In Person",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0Njk3NDkxNw==": "Online Courses",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NzgwNjg1Mw==": "Training Courses",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI0NzgwNjkxNw==": "Toolkits",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MjQ1NDU3NDcz": "Course: Agile for Product Managers and Product Owners",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MjQ1NjIxMzEz": "Course: Optimal Product Management and Product Marketing",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1MzA2NTA0MjU3": "Location: Austin, TX",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDU1MjcwOTc3": "Location: Boston, MA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMjk5MTM3": "Location: New York, NY",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMzMxOTA1": "Location: San Francisco, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzMzk3NDQx": "Location: San Jose, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzNTYxMjgx": "Locations: Toronto, ON",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzNTk0MDQ5": "Location: London, United Kingdom",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDYzODIzNDI1": "Location: Seattle, WA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM1NDY0MTE4MzM3": "Location: Los Angeles, CA",
+                "Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzM3NzAyNTk4NzIx": "Course Type: Online"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b0430d0a8b87",
+            "label": "Price",
+            "name": "price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b042fe8b9675",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5aeb1ee3bfa96",
+            "label": "What's Included Masthead Text",
+            "name": "whats_included_masthead_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 5,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5ae37e7984f46",
+            "label": "General Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acf9c8f72e76",
+                        "operator": "==",
+                        "value": "On Site"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ae73f728673a",
+            "label": "Short Title",
+            "name": "short_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ae74c7b8673b",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5add05201948a",
+            "label": "Comparison Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acf9c8f72e76",
+                        "operator": "==",
+                        "value": "Online"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5acf9c8f72e76",
+                        "operator": "==",
+                        "value": "In Person"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5add050419489",
+            "label": "Comparison Info",
+            "name": "comparison_info",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5add0473520ae"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5aeb580b40bd2",
+            "label": "Detail Page Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b1044e86fdb7",
+            "label": "Side Bar Extra Links",
+            "name": "side_bar_extra_links",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5aeb581640bd3",
+            "label": "Detail Page Sections",
+            "name": "course_detail_info",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5acf9cdc2e107"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "courses"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1529521712
+}

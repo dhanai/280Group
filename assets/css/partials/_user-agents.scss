@@ -1,0 +1,15 @@
+// Side scrolling fix for windows 
+
+/*
+html[data-platform="Win32"] {
+  overflow-x: hidden;
+}
+*/
+
+
+
+
+html[data-useragent*='MSIE 9.0'] body {
+
+    
+}

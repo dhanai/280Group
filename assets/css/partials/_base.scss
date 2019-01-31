@@ -1,0 +1,72 @@
+// PROJECT SPECIFIC VARIABLES BASE
+
+// fonts
+// put font import here if not using typekit or google fonts
+
+/*
+@font-face {
+  font-family: 'Veneer';
+  src: url('../fonts/Veneer.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ThirstyRough';
+  src: url('../fonts/ThirstyRoughLight.woff') format('woff');
+}
+*/
+
+
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Open Sans', sans-serif;
+$font-fa: 'Font Awesome 5 Free';
+
+
+// colors
+$color-1: #002c65;
+$color-2: #5e5751;
+$color-3: #0e99ac;
+$color-4: #faad3e;
+$color-5: #323232;
+$color-6: #0c87a0;
+$color-7: #f5f5f5;
+
+
+// heights
+$height-header: 93px;
+$height-header-short: 90px;
+
+$height-min-masthead: 480px;
+$height-masthead: 650px;
+$height-masthead-tall: 100vh;
+$height-masthead-short: 400px;
+
+$height-footer: 280px;
+
+
+// widths
+$container-width-full: 1170px;
+
+$skinny: 675px;
+$skinny-extended: 1120px;
+
+
+
+// PROJECT SPECIFIC EXTENDS
+
+
+
+
+
+// RESPONSIVE
+
+$mobile: "only screen and (max-width : "+$small-screen+")";
+
+$tablet: "only screen and (max-width : "+$medium-screen+")";
+
+$large: "only screen and (max-width : "+$large-screen+")";
+
+$mobile-up: "only screen and (min-width : "+$small-screen+")";
+
+$tablet-up: "only screen and (min-width : "+$medium-screen+")";
+
+$large-up: "only screen and (min-width : "+$large-screen+")";

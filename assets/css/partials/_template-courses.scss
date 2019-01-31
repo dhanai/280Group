@@ -1,0 +1,327 @@
+.online-courses, .inperson-courses, .training-category-list, .inperson-courses-calendar {
+  
+  #masthead {
+    padding-bottom: 30px;
+  }
+  
+  .comparison-chart {
+    
+    max-width: 1300px;
+
+      table {
+      
+      @media #{$mobile-up}{
+
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        background-color: #ffffff;
+        border-radius: 3px;
+        overflow: hidden;
+        
+        thead {
+          background-color: rgba(#0e99ac,.1);
+          font-size: 18px;
+          line-height: 22px;
+          border-bottom: 1px solid #000;
+          th {
+            font-weight: 700;
+            //text-align: center;
+            width: 27%;
+            padding: 15px 20px;
+            
+            a {
+              color: #000;
+              text-decoration: none;
+            }
+            
+            &:first-of-type {
+              width: 19%;
+              text-align: left;
+              padding-left: 35px;
+            }
+          }
+        }
+        
+        tbody {
+          
+          tr {
+            border-bottom: 1px solid rgba(#707070,.2);
+            
+            td {
+              border-right: 1px solid rgba(#707070,.2);
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 34px;
+              //text-align: center;
+              padding-left: 10px;
+              padding-right: 10px;
+              
+              &:first-of-type {
+                background-color: rgba(#f2f0f0,.25);
+                text-align: left;
+                padding-left: 35px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 34px;
+                color: rgba(#000,.8);
+              }
+              
+              &:last-of-type {
+                border-right: 0;
+              }
+               
+            }
+          }
+        }
+        
+        tfoot {
+          tr {
+            td {
+              text-align: center;
+              padding: 30px 0;
+            }
+          }
+          
+          @media #{$mobile}{
+          	display: none;
+          }
+        }
+      }
+      
+
+      }
+    	
+
+  }
+  
+  .course-cards {
+    margin-top: 70px;
+    border-top:1px solid rgba(#707070,.15);
+    padding-top: 20px;
+
+    .container {
+      max-width: 1200px;
+    }    
+    
+    .card {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      min-height: 650px;
+      min-height: 0;
+      margin: 10px 10px 40px;
+      
+      .card-header {
+        padding: 25px 20px 25px 40px;
+        background-color: rgba(#f2f0f0,.37);
+        min-height: 90px;
+        
+        img {
+          width: 53px;
+          float: left;
+          margin-right: 12px;
+          margin-bottom: 20px;
+          
+          @media #{$mobile}{
+          	float: none;
+          	margin-bottom: 15px;
+          	width: 40px;
+          }
+        }
+        
+        h3 {
+          font-size: 21px;
+          font-weight: 400;
+          color: #000;
+          text-align: left;
+          margin: 0;
+          
+          a {
+            color: #000;
+            text-decoration: none;
+          }
+          
+          @media #{$mobile}{
+          	font-size: 18px;
+          	line-height: 1.5;
+          	text-align: center;
+          }
+        }
+      }
+      
+      .card-content {
+        text-align: left;
+        padding: 25px 40px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        min-height: 585px;
+        min-height: 0;
+        
+        @media #{$mobile}{
+        	min-height: 0px !important;
+        	padding: 25px 20px;
+        	font-size: 14px;
+        }
+      }
+      
+      .card-action {
+        text-align: left;
+        padding: 20px 40px 50px;
+        border: 0;
+
+        b {
+          display: block;
+          margin-bottom: 15px;
+        }
+      }
+      
+    }
+  }
+  
+  .testimonial-scroller {
+    margin-top: 30px;
+    background-color: #f5f5f5;    
+    padding: 25px 0;
+    position: relative;
+    min-height: 520px;
+    
+    @media #{$mobile}{
+    	padding: 20px 0;
+    }
+    
+    h3 {
+      color: #000000;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: -0.8px;
+      line-height: 50px;  
+      margin-bottom: 40px;    
+      
+      @media #{$mobile}{
+      	font-size: 28px;
+      	line-height: 1.4;
+      	margin-bottom: 20px;
+      }
+    }
+    
+    .quote {
+      color: #000000;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 34px;      
+      max-width: 700px;
+      margin: 0 auto;
+      
+      @media #{$mobile}{
+      	max-width: 90vw;
+      	font-size: 18px;
+      }
+    }
+    
+    .name-title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;     
+      margin: 50px auto 0;
+      width: 325px;       
+
+      &:before {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 85px;
+        margin: 0 auto 30px;
+        background-color: #707070;
+      }
+      
+      aside {
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          width: 70px;
+          height: auto;
+        }
+      }
+      
+      .text {
+        text-align: left;
+        display: inline-block;
+        width: calc( 100% - 70px);
+        vertical-align: middle;
+        padding-left: 20px;
+      }
+      
+      span {
+        font-weight: 400;
+        display: block;
+      }
+    }
+    
+    .controls {
+      position: absolute;
+      width: 100%;
+      height: 46px;
+      top: calc(50% - 23px);
+      z-index: 10;
+
+      @media #{$mobile}{
+      	display: none;
+      	
+      	&.controls-full {
+        	position: relative;
+        	display: block;
+        	top: 0;
+      	}
+      }
+      
+      
+      span {
+        border: 1px solid rgba(85, 85, 85, 0.29);
+        font-size: 23px;
+        background: #fff;
+        display: block;
+        border-radius: 50%;
+        height: 46px;
+        width: 46px;
+        text-align: center;
+        line-height: 45px;
+        margin: 10px auto;
+        position: absolute;
+        cursor: pointer;
+        
+        @media #{$mobile}{
+        	position: absolute;
+        	
+        	&.prev-arrow {
+            left: 50%;
+            transform: translateX(-110%);
+        	}
+        	
+        	&.next-arrow {
+          	right: 50%;
+          	transform: translateX(110%);	
+        	}
+        }
+        
+
+      }      
+      
+      .prev-arrow {
+        left: 10px;
+      }
+      
+      .next-arrow {
+        right: 10px;
+      }
+      
+      
+      
+    }
+    
+    .scroller {
+      .slick-slide {
+        outline: 0;
+      }
+    }
+    
+  }
+}

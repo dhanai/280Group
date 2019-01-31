@@ -1,0 +1,91 @@
+@mixin transition($property, $duration) {
+    -webkit-transition: $property $duration;
+    -moz-transition: $property $duration;
+    -ms-transition: $property $duration;
+    -o-transition: $property $duration;
+    transition: $property $duration;
+}
+
+@mixin transition_delay($property, $duration,$delay) {
+    -webkit-transition: $property $duration,$delay;
+    -moz-transition: $property $duration,$delay;
+    -ms-transition: $property $duration,$delay;
+    -o-transition: $property $duration,$delay;
+    transition: $property $duration,$delay;
+}
+
+@mixin transition2($property, $duration, $property2, $duration2) {
+    -webkit-transition: $property $duration, $property2 $duration2;
+    -moz-transition: $property $duration, $property2 $duration2;
+    -ms-transition: $property $duration, $property2 $duration2;
+    -o-transition: $property $duration, $property2 $duration2;
+    transition: $property $duration, $property2 $duration2;
+}
+
+@mixin transition3($property, $duration, $property2, $duration2, $property3, $duration3) {
+    -webkit-transition: $property $duration, $property2 $duration2, $property3 $duration3;
+    -moz-transition: $property $duration, $property2 $duration2, $property3 $duration3;
+    -ms-transition: $property $duration, $property2 $duration2, $property3 $duration3;
+    -o-transition: $property $duration, $property2 $duration2, $property3 $duration3;
+    transition: $property $duration, $property2 $duration2, $property3 $duration3;
+}
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin box-shadow ($value) {
+    -moz-box-shadow: $value;
+	     -o-box-shadow: $value;
+	    -ms-box-shadow: $value;
+	-webkit-box-shadow: $value;
+          box-shadow: $value;
+}
+
+@mixin transform-origin ($origin) {
+    -moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+// TODO - Add keyframes
+// TODO - Add transforms
+// TODO - Find better loop version of transition

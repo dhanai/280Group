@@ -1,0 +1,277 @@
+.training-category-list {
+
+  .content {
+    margin-top: 40px;
+    
+    @media #{$mobile}{
+    	margin-top: 0;
+    }
+  }
+
+  .two-column {
+    margin-top: 50px;
+    
+    .col {
+      min-height: 320px;
+      
+      @media #{$mobile}{
+      	min-height: 0;
+      	
+      }
+    }
+    .col img {
+      border-radius: 8px;
+    }
+    
+    .text-wrapper {
+      text-align: left;
+      padding-right: 80px;
+      @media #{$mobile}{
+      	text-align: center;
+      	padding: 0 20px;
+      }
+    }
+  }
+
+  .testimonial_single {
+    background-color: #f5f5f5;
+    margin: 40px 0 50px;
+    padding: 40px 0 10px;
+    
+  }
+  
+  .comparison-table-wrapper {
+    padding-bottom: 40px;
+    
+    h2 {
+      margin: 0 0 10px 0;
+    }
+    
+    .table-container {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 30px;
+      
+      >.col {
+        padding: 0;
+      }
+    }
+
+    .tabs {
+      height: 63px;
+      li.tab {
+        text-indent: 0;
+        width: 50%;
+        height: 63px;
+        line-height: 63px;
+        border-top: solid 5px #e2e0e0;
+        
+        a {
+          color: #000000;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 63px;
+          display: inherit;
+          height: auto;
+          text-decoration: none;
+          text-transform: none;
+          background-color: #faf9f9; 
+          
+          @media #{$mobile}{
+          	font-size: 15px;
+          }
+
+          &.active {
+            background-color: $color-3;
+            color: #fff;
+          }
+        }
+      }
+      
+      
+      
+      li.indicator {
+        top: 0;
+        height: 5px;
+        background-color: $color-1;
+      }
+      
+      li:before {
+        display: none;
+        
+      }
+
+      
+    }
+    
+    @media #{$mobile-up}{
+      .comparison-table {
+        
+        font-family: $font-2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7;
+        
+        td {
+          padding-left: 15px;
+        }
+        
+        @media #{$mobile}{
+        	thead {
+          	max-width: 25vw;;
+        	}
+        }
+        
+        th {
+          color: #000;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.4;
+          border-bottom: 1px solid #000000;
+          padding-left: 15px;
+          
+          @media #{$mobile}{
+          	height: 140px;
+          	font-size: 13px;
+          }
+        }
+        
+        tr {
+          border-bottom: 1px solid rgba(#707070,.2);
+        }
+        
+        tbody {
+          td {
+            width: 25%;
+            height: 100px;
+            border-right: 1px solid rgba(#707070,.2);
+            
+            @media #{$mobile}{
+            	height: 140px;
+            	width: auto;
+            }
+  
+            
+            &:first-of-type {
+              width: 25%;
+              background-color: #fbfbfb;
+              text-align: left;
+              padding-left: 20px;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 34px;
+              color: #000;
+              
+              @media #{$mobile}{
+              	width: auto;
+              }
+            }
+          }
+        }
+        
+        tfoot td {
+          height: 100px;
+        }
+        
+        @media #{$mobile}{
+        	tfoot {
+          	display: none;
+        	}
+        }
+        
+      }	
+    }
+    
+
+  }
+  
+  section.course-cards {
+    background-color: #f5f5f5;
+    margin-top: 0;
+    padding: 0px 0 20px;
+    
+    &.online-course-cards {
+      background: #fff;
+    }
+    
+    h2 {
+      margin-bottom: 40px;
+    }
+    
+    .card-header {
+      height: 100px;
+      
+      @media #{$mobile}{
+      	height: auto;
+      }
+    }
+    
+    .card-content {
+      min-height: 550px;
+      min-height: 0;
+      
+      @media #{$mobile}{
+      	min-height: 0;
+      }
+    }
+    
+    > .container > .row {
+      margin-bottom: 0;
+    }
+    
+    &.inperson-course-cards {
+      .card-content {
+        min-height: 650px;
+        min-height: 0;
+      }
+    }
+    
+    &.online-course-cards {
+      .card-content {
+        min-height: 460px;
+        min-height: 0;
+      }
+    }
+    
+    &.private-course-cards {
+      .card-content {
+        min-height: 550px;
+        min-height: 0;
+      }
+    }
+    
+  }
+  
+  section.course-cards.private-course-cards {
+    
+    .two-column {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .video-section {
+    padding-bottom: 40px;
+    
+    iframe {
+      width: 800px;
+      height: 450px;
+      
+      @media #{$mobile}{
+      	max-width: 100%;
+      	height: auto;
+      	min-height: 200px;
+      }
+    }
+  }
+  
+  .testimonial2, .testimonial3 {
+    margin: 0;
+  }
+  
+  .testimonial3 {
+    background-color: #fff;
+  }
+}
+
+

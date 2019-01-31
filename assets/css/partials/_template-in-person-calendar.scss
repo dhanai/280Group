@@ -1,0 +1,293 @@
+.inperson-courses-calendar, .events-calendar {
+
+  .content {
+    margin-bottom: 80px;
+  }
+ 
+  .list-filters {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;  
+    padding: 10px 0;  
+    color: #323232;
+    font-family: $font-1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;   
+    
+    @media #{$mobile}{
+    	//display: none;
+    	
+    	.select-boxes {
+      	display: block;
+      	
+      	select {
+        	margin-left: 0;
+        	
+        	max-width: 100%;
+        	width: 100%;
+        	margin-bottom: 8px;
+      	}
+    	}
+    } 
+  }
+ 
+  .list-container {
+    margin-top: 50px;
+  }
+ 
+  #course-table {
+    border-collapse: collapse;
+    
+    thead {
+      background-color: #f8f9f9;
+      border-bottom: 0;
+      tr {
+        th {
+          font-size: 16px;
+          font-weight: 400;
+          border: 0;
+          padding-left: 10px;
+          
+          &.actions-column {
+            width: 420px;
+          }
+        }
+      }
+      
+      @media #{$mobile}{
+      	display: none;
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid rgba(#707070,.15) !important;
+                
+        td {
+          position: relative;
+          padding: 25px 0 25px 10px;
+          
+          .btn, .shopify-buy__btn   {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 12px 0px;
+            display: inline-block;
+            width: 130px;
+            
+            &.fallback-button {
+              width: 130px;
+              padding: 12px 0;
+              line-height: 1;
+              margin-right: 0;
+            }            
+            
+          }
+          
+          .btn {
+            margin-right: 10px;
+            
+            
+            
+          }
+          
+          &:last-of-type {
+            padding: 25px 0 25px 10px;
+          }
+          
+          a:not(.btn) {
+            color: $color-5;
+            text-decoration: none;
+            
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          
+          &.location-column a {
+            color: #e08604;
+          }
+          
+        }
+      }
+      
+      @media #{$mobile}{
+      	tr {
+        	display: block;
+        	padding-bottom: 0px;
+        	margin-bottom: 30px;
+        	td {
+          	display: block !important;
+          	height: auto;
+          	
+          	padding-top: 0;
+          	padding-bottom: 0;
+          	
+          	a {
+            	font-weight: bold;
+          	}
+          	
+          	&:first-of-type {
+            	padding-bottom: 0;
+          	}
+        	}
+      	}
+      }
+    }
+    
+    
+    .sold-out {
+      position: absolute;
+      background-color: #002c65;
+      line-height: 1.8;
+      padding: 0 5px;
+      color: #fff;
+      font-family: $font-2;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      top: 50%;
+      transform: translateY(-170%);
+      display: none;
+      
+    }
+  }  
+  
+  
+  .dataTables_paginate {
+    margin-top: 50px;
+    float: none;
+    text-align: center;
+    
+    span {
+      a.paginate_button {
+        background: #fff;
+        color: $color-4 !important;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-2;
+        padding: 9px 10px;
+        line-height: 1;
+        min-width: 0;
+        border: 1px solid rgba(149, 152, 154, 0.53);
+        margin: 0 5px;
+        
+        &:hover {
+          background: $color-4;
+          border-color: $color-4;
+        }
+        
+        &.current {
+          color: #95989a !important;
+          border: 1px solid rgba(149, 152, 154, 0.53);
+          background: #f5f5f5 !important;
+        }
+      }
+    }
+  }
+  
+  .text-section {
+    padding-top: 45px;
+    margin-top: 45px;
+    border-top: 1px solid rgba(112,112,112,.14);
+    
+    .copy {
+      max-width: 675px;
+      margin: 40px auto;
+    }
+  }
+  
+  #course-table_filter {
+    display: none;
+  }
+  
+  select {
+    border-radius: 3px;
+    border: 1px solid rgba(149, 152, 154, 0.1);
+    background-color: #f8f9f9;
+    height: 40px;
+    margin-left: 20px;
+    
+    color: #323232;
+    font-family: $font-1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    
+  }
+  
+  .faq-section {
+    margin-top: 60px;
+    h2 {
+      max-width: 60%;
+      margin: 0 auto 40px;
+    }
+  }
+  
+  section.course-cards {
+    
+    background-color: #f5f5f5;
+    
+    padding-bottom: 60px;
+    
+    @media #{$mobile}{
+    	.card .card-header {
+      	padding: 20px 10px;
+    	}
+    }
+    .card .card-content {
+      min-height: 640px;
+      min-height: 0;      
+    }
+  }  
+  
+}
+
+
+.shopify-buy__product {
+  display: inline-block;
+  .shopify-buy__btn {
+    background: transparent;
+    height: auto;
+    line-height: 1;
+    background: $color-4;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:disabled,
+  button[disabled] {
+    opacity: .3;
+    cursor: default;
+  }
+  
+}
+
+
+
+
+.events-calendar {
+  #course-table {
+    
+    thead {
+      tr {
+        th {
+          &.actions-column {
+            width: 130px;
+          }
+        }
+      }
+      
+    }
+
+  }  
+}
+
+
+.training_locations-template-default .inperson-courses-calendar #course-table thead tr th.actions-column {
+  width: 260px;
+}

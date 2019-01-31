@@ -1,0 +1,286 @@
+html,
+body {
+  font-family: $font-2;
+  -webkit-font-smoothing: antialiased;
+  color: $color-5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: #fff;
+  
+  
+  background: transparent !important;
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backface-visibility: visible;  
+  
+  
+  @media #{$mobile}{
+  	font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  
+  &.mobile-open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 90% !important;
+  max-width: 1170px;  
+  
+}
+
+.content {
+  position: relative;
+  
+  .container {
+    @media only screen and (min-width: $medium-screen-up) {
+      width: 70%;
+    }
+    
+    @media only screen and (max-width: $medium-screen) {
+      width: 80%;  
+    }
+    
+  }
+  
+}
+
+.skinny {
+  max-width: $skinny;
+  margin: 0 auto;
+  
+  @media screen and (max-width: $small-screen) {
+    max-width: 90%;  
+  }
+}
+
+.skinny-extended {
+  max-width: $skinny-extended;
+  margin: 0 auto;
+}
+
+
+a:not(.btn) {
+  color: $color-1;
+  
+  &:hover {
+    color: $color-3;
+  }
+  
+}
+
+.btn, input[type=submit], .shopify-buy__btn  {
+  @include transition(all, .1s)
+  background-color: $color-4;
+  display: inline-block;
+  color: #fff;
+  
+  font-family: $font-2;
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 13px 22px;
+  border-radius: 5px;
+  line-height: 1;
+  text-decoration: none !important;
+  outline: none;
+  //margin-right: 8px;
+  
+  box-shadow: none;
+  border: 0;
+  
+  &:hover {
+    @include transition(all, .15s)
+    //background-color: $color-3;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &.btn-secondary {
+    background: #fff;
+    color: $color-4; 
+    border: 1px solid $color-4;
+  }
+  
+  &.btn-link {
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+    line-height: 28px;    
+    color: $color-3;
+    background-color: transparent;
+    &:after {
+      display: inline-block;
+      content: "\0279E";
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+    
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline !important;
+    }
+  }
+  
+}
+
+.content .centered-button {
+  text-align:center;
+}
+
+.mobile-scroll-message {
+  display: none;
+  @media #{$mobile}{
+  	display: block;
+  	font-weight: bold;
+  	margin: 10px auto;
+  	text-align: center;
+  }
+}
+
+/*
+.full-width {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;  
+}
+*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-1;
+}
+
+.valign-wrapper > img {
+  margin: 0 auto;
+}
+
+.wp-caption.aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn.fallback-button {
+  margin-top: 10px;
+  display: inline-block;
+  font-family: "Arial";
+  font-size: 18px;
+  font-stretch: 100%;
+  letter-spacing: .3px;
+  font-weight: 900;
+  line-height: 21.6px;
+  width: 200px;
+  padding: 12px 10px;
+  border-radius: 3px;
+  
+}
+
+/*
+.shopify-buy__modal {
+  display: none !important;
+}
+
+.shopify-buy-modal-wrapper {
+  iframe {
+    margin: 0 auto;
+    top: 50%;
+    max-height: 90vh;
+    position: relative;
+    transform: translateY(-50%);
+    
+    @media #{$mobile}{
+    	max-height: 40vh;
+    }
+  }
+}
+*/
+
+//TYPEOGRAPHY HEADING TAGS
+
+h2 {
+  
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  line-height: 42px;
+  line-height: 1.35;
+  color: #000;
+  
+  @media #{$mobile}{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4;  	
+  }
+}
+
+h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  
+  @media #{$mobile}{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.44px;
+    line-height: 30px;  	
+  }
+}
+
+h4 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+section.sub-nav {
+  background-color: #fff;
+  padding: 17px 0 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    
+    li {
+      display: inline-block;
+      margin: 0 15px;
+      
+      @media #{$mobile}{
+      	margin-bottom: 8px;
+      }      
+      
+      a {
+        color: $color-2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 17px;
+        display: block;
+        text-transform: none;
+        @media #{$mobile}{
+        	padding-bottom: 5px;
+        }
+      }
+      
+      &.current_page_item, &.current_page_ancestor {
+        border-bottom: 2px solid $color-1;
+      }
+    }
+  }
+}

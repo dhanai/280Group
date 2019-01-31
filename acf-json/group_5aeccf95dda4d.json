@@ -1,0 +1,251 @@
+{
+    "key": "group_5aeccf95dda4d",
+    "title": "Product Detail",
+    "fields": [
+        {
+            "key": "field_5aeccfa3a6953",
+            "label": "Subtitle",
+            "name": "subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5afdcf6ac4a90",
+            "label": "Type",
+            "name": "type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "book": "Book",
+                "template": "Template"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5aeccfb7a6954",
+            "label": "Price",
+            "name": "price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aecd09ddeee6",
+            "label": "Product Link",
+            "name": "product_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5afdcf6ac4a90",
+                        "operator": "==",
+                        "value": "book"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5afdd6b9e773e",
+            "label": "Shopify Toolkit Product",
+            "name": "shopify_toolkit_product",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5afdcf6ac4a90",
+                        "operator": "==",
+                        "value": "template"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIxMDE=": "Beta Program Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIzNTc=": "Competitive Analysis Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIxNjU=": "Developer Program Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIyMjk=": "Feature Prioritization Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIwMzc=": "Product Launch Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzE5MDk=": "Product Management Lifecycle Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzE4NDU=": "Product Management Office Professional",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzE3MTc=": "Product Management Office Standard",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzIyOTM=": "Product Review Program Toolkit",
+                "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY2NTk3NzE5NzM=": "Product Roadmap Toolkit"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b2bb0dd41cc7",
+            "label": "Shopify Page Link",
+            "name": "shopify_page_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5afdcf6ac4a90",
+                        "operator": "==",
+                        "value": "template"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5aecd05646dfa",
+            "label": "Free Book Script",
+            "name": "free_book_script",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aecd01f46df9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5aecd6083ce76",
+            "label": "Short Description",
+            "name": "short_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5aecd0c5ee062",
+            "label": "Product Content",
+            "name": "product_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "products"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1529590035
+}

@@ -1,0 +1,361 @@
+// Default page styles
+.content {
+  
+  //padding-top: 150px;
+
+  strong {
+    font-weight: 700;
+    //color: $color-gray-3;
+  }
+  
+  a:not(.btn) {
+    text-decoration: underline;
+    //color: $color-red;
+    
+    &:hover {
+      //color: $color-aqua;
+    }
+    
+  }  
+  
+  /*
+img[class*="wp-image"] {
+    width: $container-width-full;
+    height: auto;
+    position: relative;
+    margin-left: calc((#{$skinny} - #{$container-width-full})/2);
+  }
+*/
+  
+/*
+  .wp-caption {
+    width: $container-width-full !important;
+    max-width: $container-width-full !important;
+    height: auto;
+    position: relative;
+    margin-left: calc((#{$skinny} - #{$container-width-full})/2);
+    border: 0;
+    text-align: left;
+    
+    img {
+      margin-left: 0;
+      width:100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    .wp-caption-text {
+      width: $skinny;
+      margin: 0 auto;
+      color: #8d7e73;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      padding: 12px 0;
+      border-bottom: 1px solid #dedad2;
+    }
+    
+  }
+*/
+
+  
+
+  .lead {
+    width: $skinny;
+    position: relative;
+    text-align: center;
+    
+    font-size: 18px;
+    line-height: 38px;
+    
+    /*
+@media #{$large-up} {      
+      margin-left: calc(-1 * (#{$skinny-extended} - #{$skinny}) / 2);
+    }
+*/
+  }
+
+
+  
+  .full-width {
+    width: 100vw;
+    @media #{$large-up} {      
+      margin-left: calc(-1 * (100vw - #{$skinny}) / 2);
+    }
+    
+    .container {
+      max-width: $skinny-extended;
+    }
+    
+    &.yes {
+      background-color: $color-7;
+    }
+  }
+
+  blockquote {
+    border: 0;
+    background-color: $color-7;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    margin: 80px 0;
+    padding: 35px 60px;
+    width: 100vw;
+    text-align: center;
+    
+    @media #{$large-up} {      
+      margin-left: calc(-1 * (100vw - #{$skinny}) / 2);
+    }
+    
+    &.full-width .container, .container {
+      position: relative;
+      max-width: $skinny;
+    }
+    
+    .source {
+      color: $color-2;
+      margin-top: 30px;
+      display: inline-block;
+      position: relative;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      
+      &:before {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 85px;
+        margin: 30px auto 30px;
+        background-color: #707070;
+      }
+      
+      .image {
+        position: absolute;
+        left: -80px;
+      }
+      
+      span {
+        display: block;
+        padding: 0;
+        font-weight: 400;
+      }
+    }
+  }
+  
+  .banner {
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+        
+    .overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+      opacity: 0.35;
+    }
+    
+    h2 {
+      position: relative;
+      color: #fff;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 61px;
+      text-align: center;
+      
+      strong {
+        font-weight: normal;
+        color: $color-1;
+      }
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      padding-left: 1.1em; 
+      text-indent: -.50em;
+      vertical-align: top;
+      line-height: 1.8;
+      margin-bottom: 4px;
+      
+      &:before {
+        content: "•";
+        font-family: $font-1;
+        color: $color-1; 
+        margin-right: 6px;
+        font-size: 28px;
+        line-height: .9;
+        vertical-align: top;
+        display: inline-block;
+
+      }
+    }
+  }
+  
+  ol {
+    padding:0;
+    counter-reset:item;
+    //margin-bottom: 50px;
+    margin-left: 20px;
+    
+    li {
+      text-indent: -24px;
+      margin:0;
+      padding:0;
+
+      list-style-type:none;
+      counter-increment:item;       
+      margin-bottom: 7px;
+      
+      &:before {
+        content: counter(item) ".";
+        display: inline-block;
+        color: $color-5;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;        
+        margin-right: 10px;                    
+        text-indent: 0px;
+      }
+    }
+  }
+  
+  .su-accordion {
+    margin: 0 auto;
+    
+    p {
+      margin: 0;
+    }
+    
+  }
+  
+  .su-spoiler {
+    border-bottom: 0;
+    background-color: #f5f5f5;    
+    margin-bottom: 10px;
+    
+    &.su-spoiler-closed {
+      
+      .su-spoiler-icon {
+        &:before {
+          font-weight: 900;
+          font-size: 37px;
+          line-height: 45px;
+          content: "\f107";
+          color: $color-1;
+        }  
+      }
+      
+      .su-spoiler-title {
+        color: #000;
+        font-family: $font-2;
+        font-size: 18px;
+        font-weight: 400;        
+        
+        &:hover {
+          color: $color-1;
+        }
+      }
+    }
+  }
+  
+  .su-spoiler-title {
+    color: $color-1;
+    font-family: $font-2;
+    font-size: 18px;
+    font-weight: 400;
+        
+    padding: 20px 40px 20px 20px !important; 
+    border-bottom: 0;
+
+
+    
+    .su-spoiler-icon {
+      border-bottom: 0;
+      line-height: 1.7;
+      left: auto !important;
+      right: 15px;
+
+
+      
+      &:before {
+        content: "\f106";
+        color: $color-1;
+        font-weight: 900;
+        font-size: 37px;
+        line-height: 45px;
+        
+      }
+    }
+  }
+  
+  .su-spoiler-content {
+    @include transition(all, .4s)
+    height: auto;
+    padding-left: 40px  !important;
+    padding-top: 10px !important;
+    padding-right: 40px  !important;
+    max-height: 1000px;
+    overflow: hidden;
+    line-height: 32px;
+    border-bottom: 0;
+    
+    @media #{$mobile} {
+      padding-left: 30px !important;
+      padding-right: 30px !important;  
+    }
+    
+  }
+  
+  .su-spoiler.su-spoiler-closed > .su-spoiler-content {
+    @include transition(all, .2s)
+    padding-top: 0 !important;
+    height: auto;
+    max-height: 0px;
+    overflow: hidden;
+    
+  }  
+  
+  img.aligncenter {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media #{$mobile}{
+  	img {
+    	height: auto;
+    	max-width: 100%;
+  	}
+  	
+  	.wp-caption {
+    	max-width: 100%;
+  	}
+  }
+  
+}  
+  
+  
+.default-page .content {
+  font-family: $font-2;
+  h2 {
+    text-align: center;
+  }
+}  
+.oops .content .container{
+
+  max-width: 800px;
+  font-size: 28px;
+  padding: 0 0 100px;
+
+}
+

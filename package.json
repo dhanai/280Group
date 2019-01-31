@@ -1,0 +1,26 @@
+{
+  "name": "glide-starter-wp-theme",
+  "version": "1.0.0",
+  "description": "Starter package for Glide Custom Wordpress Themes",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Glide LLC",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "stickybits": "^3.3.2"
+  },
+  "dependencies": {
+    "materialize-css": "^0.98.2"
+  }
+}
