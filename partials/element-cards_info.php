@@ -4,7 +4,7 @@
 
   foreach($item['cards'] as $card) : ?>
 
-    <div class="col s12 m4">
+    <div class="col s12 m12 l4">
       <div class="card">
         <div class="card-content">
           <h3 class="card-title"><?php echo $card['title'] ?></h3>
