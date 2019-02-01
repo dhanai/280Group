@@ -8323,13 +8323,11 @@ img[class*="wp-image"] {
             margin-bottom: 15px;
             height: auto;
             padding-bottom: 15px; } }
-      .course-detail .section .cards_info .card .card-content .copy {
-        min-height: 270px; }
-        @media only screen and (max-width: 600px) {
-          .course-detail .section .cards_info .card .card-content .copy {
-            min-height: auto;
-            font-size: 14px;
-            line-height: 1.7; } }
+      @media only screen and (max-width: 600px) {
+        .course-detail .section .cards_info .card .card-content .copy {
+          min-height: auto;
+          font-size: 14px;
+          line-height: 1.7; } }
     .course-detail .section .cards_info .card .card-action {
       padding: 30px;
       border-top: 1px solid rgba(112, 112, 112, 0.15); }
@@ -8451,15 +8449,24 @@ img[class*="wp-image"] {
   .cards_list .col:nth-of-type(3) .card-header {
     background-color: #0e99ac; }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .course-detail .section .cards_info .card .card-content {
-    min-height: 766px; }
-  .course-detail .section .cards_info .card .card-action {
-    min-height: 183px; }
-  .course-detail .section .cards_info .card .card-content .subtext {
-    height: auto; }
-  .course-detail .section .cards_info .card .card-content .subtext:after {
-    bottom: -15px; } }
+@media (min-width: 992px) {
+  .cards_info .row {
+    display: flex; }
+    .cards_info .row .col {
+      display: flex; }
+      .cards_info .row .col .card {
+        padding-bottom: 130px; }
+        .cards_info .row .col .card .card-action {
+          min-height: 130px;
+          position: absolute;
+          width: 100%;
+          bottom: 0px; } }
+
+@media (min-width: 992px) and (max-width: 1230px) {
+  .cards_info .row .col .card {
+    padding-bottom: 160px; }
+    .cards_info .row .col .card .card-action {
+      min-height: 160px; } }
 
 .col-6 {
   width: 50%;

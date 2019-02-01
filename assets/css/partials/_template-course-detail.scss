@@ -587,7 +587,7 @@
           }
           
           .copy {
-            min-height: 270px;
+            // min-height: 270px;
             
             @media #{$mobile}{
             	min-height: auto;
@@ -778,19 +778,53 @@
   
 }
 
-@media (min-width: 992px) and (max-width: 1199px){ 
-  .course-detail .section .cards_info .card .card-content {
-    min-height: 766px;
-  } 
-  .course-detail .section .cards_info .card .card-action {
-    min-height: 183px  
+// @media (min-width: 992px) and (max-width: 1199px){ 
+//   .course-detail .section .cards_info .card .card-content {
+//     min-height: 766px;
+//   } 
+//   .course-detail .section .cards_info .card .card-action {
+//     min-height: 183px  
+//   }
+//   .course-detail .section .cards_info .card .card-content .subtext { 
+//     height: auto;  
+//   } 
+//   .course-detail .section .cards_info .card .card-content .subtext:after { 
+//     bottom: -15px; 
+//   }  
+// }
+
+
+.cards_info{
+  @media (min-width: 992px){
+    .row{
+      display: flex;
+
+      .col{
+        display: flex;
+
+        .card{
+          padding-bottom: 130px;
+
+          .card-action{
+            min-height: 130px;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+          }
+        }
+      }
+    }
   }
-  .course-detail .section .cards_info .card .card-content .subtext { 
-    height: auto;  
-  } 
-  .course-detail .section .cards_info .card .card-content .subtext:after { 
-    bottom: -15px; 
-  }  
+
+  @media (min-width: 992px) and (max-width: 1230px){
+    .row .col .card{
+      padding-bottom: 160px;
+
+      .card-action{
+        min-height: 160px;
+      }
+    }
+  }
 }
 
 .col-6{
