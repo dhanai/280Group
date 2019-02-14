@@ -8152,21 +8152,19 @@ img[class*="wp-image"] {
               height: 70px;
               left: -10px; }
               .course-detail .section .icon_list > ul > li .icon-wrapper img {
-                max-height: 55px;
-                max-width: 55px;
+                max-width: 45px;
+                max-height: 50px;
                 height: auto;
                 left: auto; } }
           .course-detail .section .icon_list > ul > li .icon-wrapper img {
-            vertical-align: middle;
-            max-height: 55px;
-            max-width: 55px; }
+            vertical-align: middle; }
         .course-detail .section .icon_list > ul > li:before {
           display: none; }
       .course-detail .section .icon_list > ul.small_style {
-        margin-left: 160px; }
+        margin-left: 120px; }
         @media only screen and (max-width: 600px) {
           .course-detail .section .icon_list > ul.small_style {
-            margin-left: 130px; } }
+            margin-left: 80px; } }
         .course-detail .section .icon_list > ul.small_style > li {
           padding-top: 30px;
           padding-bottom: 30px;
@@ -8192,19 +8190,18 @@ img[class*="wp-image"] {
               .course-detail .section .icon_list > ul.small_style > li .copy {
                 font-size: 14px; } }
           .course-detail .section .icon_list > ul.small_style > li .icon-wrapper {
-            width: 120px;
-            height: 120px;
-            left: -160px;
+            width: 80px;
+            height: 80px;
+            left: -110px;
             top: calc(50% - 40px); }
             @media only screen and (max-width: 600px) {
               .course-detail .section .icon_list > ul.small_style > li .icon-wrapper {
-                width: 100px;
-                height: 100px;
-                left: -130px;
+                width: 60px;
+                height: 60px;
+                left: -80px;
                 top: 30px; }
                 .course-detail .section .icon_list > ul.small_style > li .icon-wrapper img {
-                  max-height: 55px;
-                  max-width: 55px; } }
+                  max-height: 40px; } }
           .course-detail .section .icon_list > ul.small_style > li:last-of-type {
             border-bottom: 0; }
       .course-detail .section .icon_list > ul.large_style > li {
@@ -8323,11 +8320,13 @@ img[class*="wp-image"] {
             margin-bottom: 15px;
             height: auto;
             padding-bottom: 15px; } }
-      @media only screen and (max-width: 600px) {
-        .course-detail .section .cards_info .card .card-content .copy {
-          min-height: auto;
-          font-size: 14px;
-          line-height: 1.7; } }
+      .course-detail .section .cards_info .card .card-content .copy {
+        min-height: 270px; }
+        @media only screen and (max-width: 600px) {
+          .course-detail .section .cards_info .card .card-content .copy {
+            min-height: auto;
+            font-size: 14px;
+            line-height: 1.7; } }
     .course-detail .section .cards_info .card .card-action {
       padding: 30px;
       border-top: 1px solid rgba(112, 112, 112, 0.15); }
@@ -8448,79 +8447,6 @@ img[class*="wp-image"] {
     background-color: #5e5751; }
   .cards_list .col:nth-of-type(3) .card-header {
     background-color: #0e99ac; }
-
-@media (min-width: 992px) {
-  .cards_info .row {
-    display: flex; }
-    .cards_info .row .col {
-      display: flex; }
-      .cards_info .row .col .card {
-        padding-bottom: 130px; }
-        .cards_info .row .col .card .card-action {
-          min-height: 130px;
-          position: absolute;
-          width: 100%;
-          bottom: 0px; } }
-
-@media (min-width: 992px) and (max-width: 1230px) {
-  .cards_info .row .col .card {
-    padding-bottom: 160px; }
-    .cards_info .row .col .card .card-action {
-      min-height: 160px; } }
-
-.col-6 {
-  width: 50%;
-  display: inline-block; }
-
-.youtube-player {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* Use 75% for 4:3 videos */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  margin: 5px; }
-
-.youtube-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background: transparent; }
-
-.youtube-player img {
-  bottom: 0;
-  display: block;
-  left: 0;
-  margin: auto;
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: .4s all;
-  -moz-transition: .4s all;
-  transition: .4s all; }
-
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%); }
-
-.youtube-player .play {
-  height: 72px;
-  width: 72px;
-  left: 50%;
-  top: 50%;
-  margin-left: -36px;
-  margin-top: -36px;
-  position: absolute;
-  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
-  cursor: pointer; }
 
 .training-category-list .content {
   margin-top: 40px; }
@@ -8893,7 +8819,7 @@ img[class*="wp-image"] {
       min-height: 0; }
       @media only screen and (max-width: 600px) {
         .online-courses .course-cards .card .card-content, .inperson-courses .course-cards .card .card-content, .training-category-list .course-cards .card .card-content, .inperson-courses-calendar .course-cards .card .card-content {
-          min-height: 0px !important;
+          min-height: 0;
           padding: 25px 20px;
           font-size: 14px; } }
     .online-courses .course-cards .card .card-action, .inperson-courses .course-cards .card .card-action, .training-category-list .course-cards .card .card-action, .inperson-courses-calendar .course-cards .card .card-action {

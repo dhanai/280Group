@@ -157,7 +157,7 @@
         min-height: 0;
         
         @media #{$mobile}{
-        	min-height: 0px !important;
+        	min-height: 0;
         	padding: 25px 20px;
         	font-size: 14px;
         }

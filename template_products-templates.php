@@ -51,11 +51,13 @@ global $glide_acf_option_fields;
             <div class="product row">
                 <div class="col l5 s12 image-wrapper">
                   <?php
-                    $img_id = get_the_post_thumbnail_url($product['id'])!="" ? glide_get_image_id(get_the_post_thumbnail_url($product['id'])) : "";
-                    $image = wp_get_attachment_image($img_id, 'product-detail');
+                    // $img_id = get_the_post_thumbnail_url($product['id'])!="" ? glide_get_image_id(get_the_post_thumbnail_url($product['id'])) : "";
+                    // $image = wp_get_attachment_image($img_id, 'product-detail');
+                    $image_attachment = get_the_post_thumbnail_url($product['id'],'medium');
                   ?>
                   
-                  <?php echo $image; ?>
+                  <?php //echo $image; ?>
+                  <?php echo '<img src="'.$image_attachment.'">';?>
                 </div>
                 <div class="col l7 s12">
                   <h3><?php echo $product['title'] ?></h3>

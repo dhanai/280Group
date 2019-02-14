@@ -264,6 +264,29 @@ $(document).ready(function(){
 
 </body>
 </html>
+<script type ="text/javascript">
+jQuery(document).ready(function(){
 
+// Select and loop the container element of the elements you want to equalise
+jQuery('.row').each(function(){  
+  
+  // Cache the highest
+  var highestBox = 0;
+  
+  // Select and loop the elements you want to equalise
+  jQuery('.product-wrapper', this).each(function(){
+    
+    // If this box is higher than the cached highest then store it
+    if(jQuery(this).height() > highestBox) {
+      highestBox = jQuery(this).height(); 
+    }
+  
+  });  
+        
+  // Set the height of all those children to whichever was highest 
+  jQuery('.product-wrapper',this).height(highestBox);
+                
+}); 
 
-
+});
+</script>
