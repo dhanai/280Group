@@ -78,39 +78,50 @@ $courses = $themeCPT->courses('in person');
   }
   
     foreach($responsearray["data"]["shop"]["collectionByHandle"]["products"]["edges"] as $row) {
-      
+      //print("<pre>".print_r($row,true)."</pre>");
       $fallback_link = $row['node']['onlineStoreUrl'];
+
+      $matching_location = "";
+      $matching_course = ""; 
+
+      foreach ($row['node']['collections']['edges']as $collection) {
+        if ($matching_course === "") $matching_course = search_cpt_array($courses, "course_collection_id", $collection['node']['storefrontId']);
+        if ($matching_location === "") $matching_location = search_cpt_array($locations, "location_collection_id", $collection['node']['storefrontId']);
+      }
       
       foreach ($row['node']['variants'] as $variant) {
         
         foreach ($variant as $item) {
           
-          $product_id = $item['node']['product']['id']; 
+          $product_id = $item['node']['product']['storefrontId']; 
           $product_id_decoded = substr(base64_decode( $product_id ), strrpos(base64_decode( $product_id ), '/') + 1);
           $product_title = $item['node']['product']['title'];
-          $variant_id = $item['node']['id']; 
+          $variant_id = $item['node']['storefrontId']; 
           $variant_id_decoded = substr(base64_decode( $variant_id ), strrpos(base64_decode( $variant_id ), '/') + 1);
           $time_stamp = $item['node']['sku'];
-          $matching_location = "";
-          $matching_course = ""; 
-          
-          foreach ($item['node']['product']['collections']['edges'] as $collection) {
-            if ($matching_course === "") $matching_course = search_cpt_array($courses, "course_collection_id", $collection['node']['id']);
-            if ($matching_location === "") $matching_location = search_cpt_array($locations, "location_collection_id", $collection['node']['id']);
+          $inventory = $item['node']['inventoryQuantity'];
+          $inventory_copy = "";
+          if ($inventory <= 5 && $inventory > 0) { $inventory_copy = "<span class='inventory low-inventory'>".$inventory." Spots Left</span>";}
+
+          if (isset($_GET['course_id'])) {
+            if ($matching_course['course_collection_id'] != $_GET['course_id']) { continue; }  
           }
-          //if ($matching_location['shopify_collection_location'] !== $location) continue;
-    
+            
           $rowString = "";
           $rowString .= "<tr>";
-          $rowString .= "<td data-sort=".$time_stamp."><span class='sold-out'>Sold Out</span>".$item['node']['title']."</td>";
-          $rowString .= "<td>".return_link_from_array($matching_location)."</td>";
-          //$rowString .= "<td>".$product_title."</td>";
-          $rowString .= "<td>";
+          $rowString .= "<td data-sort=".$time_stamp.">".$inventory_copy.$item['node']['title']."</td>";
+          $rowString .= "<td class='location-column' data-filter='".$matching_location['title']."'>".return_link_from_array($matching_location)."</td>";
+          $rowString .= "<td  data-filter='".$matching_course['title']."'>";
           $rowString .= return_link_from_array($matching_course);
           $rowString .= "</td>";
         
-          //$rowString .= "<td><div id='sb-".$variant_id_decoded."'class='buy-button-container' data-id-product='".$product_id_decoded."' data-id-variant='".$variant_id_decoded."'>".return_link_from_array($matching_course, "btn btn-secondary", "Course Info")."</div></td>";
-          $rowString .= "<td><div id='sb-".$variant_id_decoded."'class='buy-button-container' data-id-product='".$product_id_decoded."' data-id-variant='".$variant_id_decoded."'>".return_link_from_array($matching_course, "btn btn-secondary", "Course Info")."<a href='".$fallback_link."?variant=".$variant_id_decoded."' class='fallback-button btn' target='_blank'>Register</a></div></td>";
+          $rowString .= "<td><div>".return_link_from_array($matching_course, "btn btn-secondary", "Course Info")."";
+          if ($inventory < 1) {
+            $rowString .= "<a href='".$fallback_link."?variant=".$variant_id_decoded."' class='fallback-button btn sold-out-button' target='_blank'>Sold Out</a>";  
+          } else {
+            $rowString .= "<a href='".$fallback_link."?variant=".$variant_id_decoded."' class='fallback-button btn' target='_blank'>Register</a>";  
+          }
+          $rowString .= "</div></td>";
           $rowString .= "</tr>";
             
           if ($time_stamp !== "" && $time_stamp >= time()  && $matching_course !== "" && $matching_location !== "") {
