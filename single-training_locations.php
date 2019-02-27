@@ -110,7 +110,7 @@ $courses = $themeCPT->courses('in person');
           $rowString = "";
           $rowString .= "<tr>";
           $rowString .= "<td data-sort=".$time_stamp.">".$inventory_copy.$item['node']['title']."</td>";
-          $rowString .= "<td class='location-column' data-filter='".$matching_location['title']."'>".return_link_from_array($matching_location)."</td>";
+          $rowString .= "<td class='location-column' data-filter='".$matching_location['title']."'>".$matching_location['title']."</td>";
           $rowString .= "<td  data-filter='".$matching_course['title']."'>";
           $rowString .= return_link_from_array($matching_course);
           $rowString .= "</td>";
